@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 91vw;
+  height: 7.5vh;
+  left: 4.5vw;
+  border-bottom: 1px solid white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  width: 15%;
+  font-size: calc(0.75vw + 10px);
+}
+
+.home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: url("./img/Background.png") 50% 50%/cover;
+}
+
+.home .scroll {
+  width: 15vw;
+  height: 12.5vh;
+  position: fixed;
+}
+
+.home .scroll .scroll__description {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.home .scroll .scroll__img {
+  width: 25px;
+  height: 25px;
+  margin-left: calc(7.5vw - 12.5px);
+  margin-top: 22.5px;
+  background: url("./img/doubleArrow.png") 50% 50%/contain;
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
+}
+
+.about__img {
+  display: inline-block;
+  width: 40vw;
+  height: 50vh;
+  background: url("./img/JasonWood.png") no-repeat 50% 50%/contain;
+}
+
+.about-info {
+  width: 40vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-info__title {
+  font-size: calc(1.25vw + 20px);
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about-info__description {
+  width: 30vw;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: calc(0.7vw + 7.5px);
+  line-height: 1.6;
+}
+
+.about-info__name {
+  font-size: calc(1vw + 10px);
+  font-weight: 500;
+}
