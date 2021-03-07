@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,7 @@ nav {
   a {
     color: white;
     text-decoration: none;
+    text-align: center;
     width: 15%;
     font-size: calc(0.75vw + 10px);
   }
@@ -36,11 +38,12 @@ nav {
   background: url('./img/Background.png') 50% 50% / cover;
 
   .scroll {
-    width: 15vw;
+    width: 25vw;
     height: 12.5vh;
     position: fixed;
 
     .scroll__description {
+      font-size: calc(1vw + 5px);
       text-align: center;
       color: white;
       text-transform: uppercase;
@@ -49,7 +52,7 @@ nav {
     .scroll__img {
       width: 25px;
       height: 25px;
-      margin-left: calc(7.5vw - 12.5px);
+      margin-left: calc(12.5vw - 12.5px);
       margin-top: 22.5px;
       background: url('./img/doubleArrow.png') 50% 50% / contain;
     }
@@ -104,14 +107,28 @@ nav {
 }
 
 
-@media screen and (max-width: 1920px) and (min-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
 
-}
+    &__img {
+      width: 50vw;
+    }
 
-@media screen and (max-width: 1200px) and (min-width: 550px) {
-
-}
-
-@media screen and (max-width: 550px) and (min-width: 300px) {
-
+    &-info {
+      &__description {
+        font-size: calc(0.7vw + 7px);
+      }
+      
+      &__name {
+        font-size: calc(1vw + 15px);
+      }
+    }
+  }
 }
