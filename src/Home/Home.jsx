@@ -1,12 +1,23 @@
-let Home = () => {
+import React, { useState } from 'react';
+import { changeText } from './changeText';
+
+let Home = ({ heightState }) => {
+  let [text, setText] = useState('scroll down to see more');
+
+  setInterval(() => {
+    let newText = changeText();
+    setText(newText);
+  }, 1000)
+
   return (
     <div className='home'>
-      <div className='scroll'>
+      {!heightState && <div className='scroll'>
         <div className='scroll__description'>
-          scroll down to see more
+          {text}
         </div>
         <div className='scroll__img'></div>
       </div>
+      }
     </div>
   )
 };
