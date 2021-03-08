@@ -58,7 +58,7 @@ nav a {
 }
 
 .home .scroll {
-  width: 25vw;
+  width: 100vw;
   height: 12.5vh;
   position: fixed;
 }
@@ -73,7 +73,7 @@ nav a {
 .home .scroll .scroll__img {
   width: 25px;
   height: 25px;
-  margin-left: calc(12.5vw - 12.5px);
+  margin-left: calc(50vw - 12.5px);
   margin-top: 22.5px;
   background: url("./img/doubleArrow.png") 50% 50%/contain;
 }
@@ -148,23 +148,6 @@ nav a {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
-  .about {
-    width: 100vw;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: lightgray;
-  }
   .about__img {
     width: 50vw;
   }
@@ -183,15 +166,6 @@ nav a {
   }
   nav a {
     font-size: calc(1.5vw + 5px);
-  }
-  .home .scroll {
-    width: 30vw;
-  }
-  .home .scroll .scroll__description {
-    font-size: calc(1.5vw + 2px);
-  }
-  .home .scroll .scroll__img {
-    margin-left: calc(15vw - 12.5px);
   }
   .about {
     height: 150vh;
@@ -220,9 +194,6 @@ nav a {
   }
   .about-info__title {
     font-size: calc(1.25vw + 20px);
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 3px;
   }
   .about-info__description {
     width: 80%;
@@ -242,6 +213,83 @@ nav a {
   }
   .about-info__name {
     font-size: calc(1vw + 17.5px);
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 250px) {
+  nav {
+    border-bottom: none;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 15%;
+    font-size: calc(0.75vw + 10px);
+  }
+  nav div {
+    width: 75%;
+  }
+  nav div span {
+    color: white;
+    font-size: calc(1vw + 15px);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .home {
+    height: 50vh;
+  }
+  .about {
+    width: 100vw;
+    height: 160vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+  }
+  .about__img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url("./img/JasonWood.png") no-repeat 50% 50%/cover;
+  }
+  .about-info {
+    width: 80vw;
+    height: 60vh;
+    display: block;
+  }
+  .about-info__title {
+    height: 10vh;
+    margin-top: 5vh;
+    font-size: calc(1.5vw + 25px);
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .about-info__description {
+    width: 100%;
+    height: calc(70vh - 25vw);
+    display: block;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .about-info__name {
+    width: 100%;
+    height: 10vh;
+    margin-top: -5vh;
+    display: block;
+    font-size: calc(1vw + 20px);
     font-weight: 500;
   }
 }
